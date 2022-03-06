@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return <>
     <Head>
       <title>Create next</title>
-      <link key={'main'} rel="icon" href="./favicon2.ico"/>
+      <link key={'main'} rel="icon" href="./favicon.ico"/>
     </Head>
     <Component {...pageProps} />
   </>;
