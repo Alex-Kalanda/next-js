@@ -6,11 +6,15 @@ body {
   font-family: "Noto Sans Display", sans-serif;
 }
 .wrapper {
+  max-width: 800px;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   color: var(--black);
-  gap: 10px;
+  gap: 50px;
 }
 
 a {
