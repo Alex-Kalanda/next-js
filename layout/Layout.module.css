@@ -1,0 +1,21 @@
+.header {
+    height: 72px;
+    background-color: #C8F8E4;
+}
+.main {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    column-gap: 10px;
+}
+
+.sidebar {
+    background-color: #f8f3c8;
+}
+.main__content {
+    background-color: #f1b7c5;
+}
+
+.footer {
+    height: 72px;
+    background-color: #c8c9f8;
+}

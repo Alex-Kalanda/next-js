@@ -1,17 +1,16 @@
 import React, {useState} from "react";
 import {Htag, Rating, Tag} from "../components";
 import {Button} from "../components";
+import {withLayout} from "../layout/Layout";
 
-export default function Home(): JSX.Element {
+function Home(): JSX.Element {
   const [counter, setCounter] = useState<number>(0);
   const [rating, setRating] = useState<number>(4);
 
   const counterIncrease = () => {setCounter(counter+1)};
   const counterReduce = () => {setCounter(counter-1)};
 
-
-
-  return <div className="wrapper">
+  return <>
     <Htag tag="h1">First caption</Htag>
     <Htag tag="h1">{counter}</Htag>
     <Button arrow="down" onClick={counterIncrease} appearance="primary">Увеличить</Button>
@@ -26,6 +25,7 @@ export default function Home(): JSX.Element {
     <Tag type="green">sale!!!</Tag>
     <Tag type="grey">{counter}</Tag>
     <Tag type="grey">14</Tag>
-  </div>;
+  </>;
 }
 
+export default withLayout(Home);
