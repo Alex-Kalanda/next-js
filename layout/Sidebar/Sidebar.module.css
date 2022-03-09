@@ -1,0 +1,32 @@
+.sidebar {
+    font-size: var(--font-NS);
+}
+.sidebar ul {
+    list-style: none;
+}
+.owl_icon {
+    margin: 34px 0 26px 34px;
+}
+.input {
+    width: 230px;
+    height: 36px;
+    padding-left: 15px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    border: 0;
+    background-color: var(--white);
+}
+.search {
+    position: relative;
+}
+.search__button {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 5px;
+    right: 3px;
+    top: 3px;
+    background-color: var(--primary);
+    border: 0;
+}
