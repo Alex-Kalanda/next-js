@@ -54,7 +54,7 @@ export const Rating = ({isEditable = false, rating, setRating, ...props}: Rating
     return (
         <div className={styles.container} {...props}>
             {ratingArray.map((star: JSX.Element, index: number) => {
-                return <span key={index}>{star}</span>
+                return <span key={index}>{star}</span>;
             })}
         </div>);
 };
