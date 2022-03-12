@@ -1,8 +1,15 @@
+import {MenuItem} from "./interface.menu";
+
 export enum TopLevelCategory {
     Courses,
     Services,
     Books,
     Products
+}
+
+export interface HomeProps extends Record<string, unknown>{
+    menu: MenuItem[];
+    firstCategory: number;
 }
 
 export interface TopPageAdvantage {
