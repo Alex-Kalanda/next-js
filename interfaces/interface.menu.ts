@@ -13,6 +13,7 @@ export interface PageItem {
 
 export interface MenuItem {
     _id: Id;
+    isOpened?: boolean;
     pages: PageItem[];
 }
 
